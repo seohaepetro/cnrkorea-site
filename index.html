@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CNR Korea — Carbon-Neutral Renewable & Environmental Solutions" />
+  <title>CNR Korea | Company Profile</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1620;
+      --text:#e8eef6;
+      --muted:#a9b6c6;
+      --line:rgba(232,238,246,.12);
+      --accent:#6ee7ff;
+      --accent2:#a78bfa;
+      --shadow:0 12px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1040px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(900px 600px at 15% 10%, rgba(110,231,255,.16), transparent 60%),
+        radial-gradient(800px 520px at 85% 20%, rgba(167,139,250,.14), transparent 55%),
+        linear-gradient(180deg, #070a0f 0%, var(--bg) 100%);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:14px 16px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(15,22,32,.55);
+      backdrop-filter: blur(10px);
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand img{height:34px; width:auto; display:block}
+    .brand b{font-size:14px; letter-spacing:.08em}
+    .nav{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+    .nav a{
+      font-size:13px; color:var(--muted);
+      padding:8px 10px; border-radius:999px;
+      border:1px solid transparent;
+    }
+    .nav a:hover{color:var(--text); border-color:var(--line); background:rgba(232,238,246,.04)}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px; border-radius:12px;
+      border:1px solid rgba(110,231,255,.35);
+      background:linear-gradient(135deg, rgba(110,231,255,.18), rgba(167,139,250,.12));
+      box-shadow: 0 10px 30px rgba(110,231,255,.10);
+      font-size:13px; color:var(--text);
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .hero{
+      margin-top:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(15,22,32,.75), rgba(15,22,32,.35));
+      border-radius:var(--radius);
+      padding:28px 22px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .hero:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(500px 140px at 25% 0%, rgba(110,231,255,.18), transparent 60%);
+      pointer-events:none;
+    }
+    .hero-inner{position:relative; display:grid; grid-template-columns: 1.2fr .8fr; gap:18px}
+    @media (max-width: 860px){ .hero-inner{grid-template-columns:1fr} }
+    h1{margin:0 0 6px; font-size:34px; line-height:1.1; letter-spacing:-.02em}
+    .tag{color:var(--muted); font-size:14px; margin:0 0 16px}
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+    .pill{
+      font-size:12px; color:var(--muted);
+      padding:7px 10px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(232,238,246,.03);
+    }
+    .cardgrid{display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:16px}
+    @media (max-width: 860px){ .cardgrid{grid-template-columns:1fr} }
+    .card{
+      border:1px solid var(--line);
+      background:rgba(15,22,32,.55);
+      border-radius:var(--radius);
+      padding:16px 16px 14px;
+      box-shadow: 0 10px 26px rgba(0,0,0,.22);
+    }
+    .card h2{margin:0 0 6px; font-size:14px; letter-spacing:.02em}
+    .card p{margin:0; color:var(--muted); font-size:13px}
+    .section{
+      margin-top:18px;
+      border:1px solid var(--line);
+      background:rgba(15,22,32,.46);
+      border-radius:var(--radius);
+      padding:18px 18px 16px;
+      box-shadow: 0 10px 26px rgba(0,0,0,.18);
+    }
+    .section h3{margin:0 0 10px; font-size:16px}
+    .tech{
+      margin:0; padding:0; list-style:none;
+      display:grid; grid-template-columns: 1fr 1fr; gap:10px 14px;
+    }
+    @media (max-width: 860px){ .tech{grid-template-columns:1fr} }
+    .tech li{
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:rgba(232,238,246,.03);
+      padding:12px 12px 10px;
+    }
+    .tech b{display:block; font-size:13px; margin-bottom:4px}
+    .tech span{display:block; color:var(--muted); font-size:13px}
+    .strengths{
+      display:grid; grid-template-columns: 1fr 1fr; gap:10px 14px;
+    }
+    @media (max-width: 860px){ .strengths{grid-template-columns:1fr} }
+    .check{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:rgba(232,238,246,.03);
+    }
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      margin-top:5px;
+      background: radial-gradient(circle at 30% 30%, var(--accent), var(--accent2));
+      box-shadow:0 0 0 4px rgba(110,231,255,.10);
+      flex:0 0 auto;
+    }
+    .check p{margin:0; color:var(--muted); font-size:13px}
+    .footer{
+      margin-top:18px;
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;
+      color:var(--muted); font-size:13px;
+      padding:12px 4px 0;
+    }
+    .small{font-size:12px; color:var(--muted)}
+    .contact{
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+    }
+    .contact a{
+      border:1px solid var(--line);
+      background:rgba(232,238,246,.03);
+      padding:8px 10px;
+      border-radius:999px;
+    }
+    .contact a:hover{color:var(--text); border-color:rgba(110,231,255,.35)}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <img src="assets/cnrkorea_logo.png" alt="CNR Korea Logo" />
+        <div>
+          <b class="mono">CNR KOREA</b><br/>
+          <span class="small">Carbon-Neutral Renewable & Environmental Solutions</span>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="#about">About</a>
+        <a href="#tech">Technologies</a>
+        <a href="#strengths">Strengths</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="files/CNR_Korea_Company_Profile_OnePage.pdf" download>Download PDF</a>
+      </div>
+    </div>
+
+    <div class="hero" id="about">
+      <div class="hero-inner">
+        <div>
+          <h1>Integrated Solutions for Water, Energy & Environmental Restoration</h1>
+          <p class="tag">
+            CNR Korea is an environmental technology company delivering practical, scalable systems for
+            <b>marine ecosystem protection</b>, <b>clean water production</b>, <b>renewable power generation</b>, and
+            <b>pollution remediation</b>.
+          </p>
+          <p class="tag">
+            Our portfolio is built on <b>low-energy</b>, <b>high-efficiency</b>, <b>non-entry</b>, and <b>unmanned</b>
+            technologies designed for real-world deployment.
+          </p>
+
+          <div class="pillrow">
+            <div class="pill">Marine Ecosystem Protection</div>
+            <div class="pill">Desalination & Water Treatment</div>
+            <div class="pill">Wind / Hydro / Tidal / Thermal Power</div>
+            <div class="pill">Waste-to-Energy</div>
+            <div class="pill">Pollution Cleanup & Soil Remediation</div>
+            <div class="pill">Non-Entry / Unmanned Safety Systems</div>
+          </div>
+        </div>
+
+        <div class="cardgrid">
+          <div class="card">
+            <h2>What We Provide</h2>
+            <p>Technology supply, pilot deployment, and scalable system integration for infrastructure projects.</p>
+          </div>
+          <div class="card">
+            <h2>Where We Work</h2>
+            <p>Coastal & island regions, industrial sites, emerging markets, and strategic corridors.</p>
+          </div>
+          <div class="card">
+            <h2>How We Deliver</h2>
+            <p>Modular designs optimized for durability, maintainability, and rapid deployment.</p>
+          </div>
+          <div class="card">
+            <h2>Company Profile</h2>
+            <p><a class="btn" href="files/CNR_Korea_Company_Profile_OnePage.pdf" download>Download the 1‑page PDF</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="tech">
+      <h3>Core Technologies</h3>
+      <ul class="tech">
+        <li><b>⓵ Eco-Friendly Marine Intake System for Ecosystem Protection</b><span>Low-velocity, low-impact intake technology designed to minimize harm to marine life.</span></li>
+        <li><b>⓶ Waste Oil Refining & Industrial Wastewater Treatment System</b><span>Environmentally responsible systems for recycling waste oil into usable resources and treating high-strength wastewater.</span></li>
+        <li><b>⓷ Marine Pollution Cleanup & Soil Remediation System</b><span>Restoration technologies for contaminated marine environments, coastlines, and polluted soils.</span></li>
+        <li><b>⓸ Non-Entry Crude Oil Storage Tank Cleaning System</b><span>Unmanned, non-entry tank cleaning technology ensuring maximum operational safety and efficiency.</span></li>
+        <li><b>⓹ One-Batch Type Complete-Combustion Incinerator–Based Seawater Desalination</b><span>Integrated waste treatment, thermal energy recovery, and seawater desalination system.</span></li>
+        <li><b>⓺ Gravity-Driven Multi-Layer Desalination System</b><span>Low-power desalination using gravitational pressure and multi-layer ion-selective separation.</span></li>
+        <li><b>⓻ Multi-Stage Compressed Dual-Flow Wind Turbine</b><span>Next-generation wind power technology with low noise, low vibration, and high efficiency.</span></li>
+        <li><b>⓼ Hydropower & Tidal Power Generation Technology</b><span>Eco-friendly power generation systems designed for low-head, low-velocity river and tidal flow environments.</span></li>
+        <li><b>⓽ Small-Scale Thermal Power Generation (Steam / Waste-to-Energy)</b><span>Compact, high-efficiency thermal and steam turbine systems utilizing waste heat and combustion energy.</span></li>
+      </ul>
+    </div>
+
+    <div class="section" id="strengths">
+      <h3>Key Strengths</h3>
+      <div class="strengths">
+        <div class="check"><div class="dot"></div><p>Low-energy, high-efficiency environmental design optimized for field deployment.</p></div>
+        <div class="check"><div class="dot"></div><p>Non-entry, unmanned, and safety-oriented technologies for hazardous environments.</p></div>
+        <div class="check"><div class="dot"></div><p>Integrated solutions spanning water, energy, and environmental restoration.</p></div>
+        <div class="check"><div class="dot"></div><p>Patent-backed portfolio with field validation and scalable modular architecture.</p></div>
+        <div class="check"><div class="dot"></div><p>Designed for global infrastructure and environmental projects, including coastal and emerging-market use cases.</p></div>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h3>Contact</h3>
+      <div class="contact">
+        <a href="https://www.cnrkorea.com" target="_blank" rel="noopener">Website: www.cnrkorea.com</a>
+        <a href="mailto:sonsg0549@gmail.com">Email: sonsg0549@gmail.com</a>
+        <a href="#" onclick="return false;">Location: Republic of Korea</a>
+      </div>
+      <p class="small" style="margin-top:10px;">Tip: Upload this site folder to your web hosting (e.g., Cafe24). Ensure <span class="mono">index.html</span> is in the root (www) directory.</p>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> CNR Korea. All rights reserved.</div>
+      <div class="small mono">One‑page profile site (HTML)</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

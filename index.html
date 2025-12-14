@@ -41,6 +41,28 @@
   height:auto;
   display:block;
 }
+    .header-bar{
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 260px 1fr 260px; /* 좌(로고) / 중(텍스트) / 우(빈칸)*/
+  align-items:center;
+  gap:12px;
+}
+
+.brand-text{
+  text-align:center;
+}
+
+.brand-text h1{
+  margin:0;
+  font-size:28px;
+  line-height:1.2;
+}
+
+.brand-text p{
+  margin:6px 0 0 0;
+}
   </style>
   <link rel="icon" href="favicon.ico">
 </head>
@@ -48,14 +70,17 @@
 <body>
 
   <header>
-    <div class="header-inner">
-    <img src="cnr-logo-transparent.png"
-         alt="CNR Korea"
-         style="max-width:260px; height:auto;">
+    <div class="header-bar">
+    <div>
+      <img src="cnr-logo-transparent.png" alt="CNR Korea Logo" class="logo-img">
+    </div>
 
-    <p style="margin-top:10px;">
-      Practical Technologies for Water, Energy, and the Environment
-    </p>
+    <div class="brand-text">
+      <h1>CNR Korea Co., Ltd.</h1>
+      <p>Practical Technologies for Water, Energy, and the Environment</p>
+    </div>
+
+    <div></div>
   </div>
   </header>
 

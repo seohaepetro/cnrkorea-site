@@ -1,197 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CNR Korea Co., Ltd. | Environmental & Energy Technologies</title>
-
-  <style>
-    /* Base */
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      color: #1a1a1a;
-      line-height: 1.7;
-      background: #f9fafb; /* page background */
-    }
-
-    a { color: #0f766e; }
-
-    /* Header */
-    header {
-      background: #ffffff;
-      color: #1a1a1a;
-      padding: 34px 20px;
-      text-align: center;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 34px;
-      letter-spacing: 0.2px;
-    }
-
-    /* Top navigation */
-    nav {
-      background: #f0fdfa;
-      padding: 12px;
-      text-align: center;
-      border-bottom: 1px solid #e6fffa;
-    }
-
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #0f766e;
-      font-weight: bold;
-    }
-
-    nav a:hover { text-decoration: underline; }
-
-    /* Layout */
-    section {
-      max-width: 1100px;
-      margin: 18px auto;
-      padding: 28px 20px;
-      background: #ffffff;
-      border: 1px solid #eef2f7;
-      border-radius: 16px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-    }
-
-    h2 {
-      color: #0f766e;
-      margin: 0 0 12px 0;
-      font-size: 24px;
-    }
-
-    p { margin: 10px 0; }
-
-    ul {
-      padding-left: 20px;
-      margin: 0;
-    }
-
-    /* Header brand */
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .brand img {
-      height: 100px;
-      width: auto;
-    }
-
-    .subtitle {
-      margin-top: 8px;
-      opacity: 0.95;
-      font-size: 18px;
-    }
-
-    /* Technologies & Strengths 2-column layout */
-    .tech-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      margin-top: 16px;
-    }
-
-    .tech-en ul,
-    .tech-kr ul {
-      list-style: disc;
-      padding-left: 20px;
-      margin: 0;
-    }
-
-    .tech-kr {
-      color: #374151;
-      font-size: 15px;
-    }
-
-    /* Contact */
-    .contact-center {
-      text-align: center;
-    }
-
-    .contact-center a {
-      color: #0f766e;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .contact-center a:hover {
-      text-decoration: underline;
-    }
-
-    .contact-pill {
-      display: inline-block;
-      background: #f0fdfa;
-      border: 1px solid #ccfbf1;
-      padding: 10px 14px;
-      border-radius: 999px;
-      margin: 6px 6px 0 6px;
-    }
-
-    /* Footer */
-    footer {
-      background: #f3f4f6;
-      border-top: 1px solid #e5e7eb;
-      padding: 22px 20px;
-      text-align: center;
-      font-size: 14px;
-      margin-top: 18px;
-    }
-
-    /* Mobile: stack columns */
-    @media (max-width: 800px) {
-      section { margin: 12px 12px; }
-      .tech-grid { grid-template-columns: 1fr; gap: 18px; }
-      header h1 { font-size: 28px; }
-      .brand img { height: 72px; }
-      .subtitle { font-size: 16px; }
-    }
-  </style>
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+color: #1a1a1a;
+}
+header {
+background: #0f2a44;
+color: #ffffff;
+padding: 40px 20px;
+text-align: center;
+}
+section {
+padding: 60px 20px;
+max-width: 1100px;
+margin: auto;
+}
+h2 {
+color: #0f2a44;
+margin-bottom: 20px;
+}
+h3 {
+margin-top: 30px;
+color: #0f2a44;
+}
+ul {
+margin-top: 15px;
+}
+footer {
+background: #f4f4f4;
+text-align: center;
+padding: 20px;
+font-size: 0.9em;
+color: #555;
+}
+</style>
 </head>
-
 <body>
-  <header>
-    <div class="brand">
-      <img
-        src="https://raw.githubusercontent.com/seohaepetro/cnrkorea-site/main/logo.png"
-        alt="CNR Korea logo"
-      />
-      <div>
-        <h1>CNR Korea Co., Ltd.</h1>
-        <p class="subtitle" style="margin: 6px 0 0;">
-          Carbon-Neutral Water, Energy & Environmental Solutions
-        </p>
-      </div>
-    </div>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#technologies">Technologies</a>
-    <a href="#strengths">Strengths</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
-  <section id="about">
-    <h2>Integrated Environmental Technology Solutions</h2>
-    <p>
-      CNR Korea Co., Ltd. develops and delivers practical, scalable technologies for water treatment,
-      renewable energy generation, and environmental restoration.
-    </p>
-    <p>
-      Our solutions are designed with a strong focus on low-energy operation, high efficiency,
-      operational safety, and real-world field deployment.
-    </p>
-  </section>
+<header>
+<h1>CNR Korea Co., Ltd.</h1>
+<p>Practical Technologies for Water, Energy, and the Environment</p>
+</header>
+
+
+<!-- About Section -->
+<section id="about">
+<h2>About CNR Korea</h2>
+
+
+<p><strong>CNR Korea Co., Ltd.</strong>, founded on <strong>November 11, 1999</strong>, has been continuously engaged in the development of environmental technologies for over two decades.</p>
+
+
+<p>We develop and deliver practical, scalable solutions for water treatment, renewable energy generation, and environmental restoration. Our work is driven by real-world challenges and validated through field deployment rather than laboratory-only concepts.</p>
+
+
+<p>Our technologies are designed with a strong focus on low-energy operation, high efficiency, operational safety, durability, and ease of maintenance, enabling reliable performance across diverse environments, including remote and infrastructure-limited regions.</p>
+
+
+<h3>Vision</h3>
+<p>To deliver practical environmental and energy technologies that enable carbon neutrality, water security, and resilient infrastructure worldwide.</p>
+
+
+<h3>Mission</h3>
+<p>We design and deploy low-energy, high-efficiency systems that solve real-world environmental and energy challenges through scalable, field-proven solutions.</p>
+
+
+<h3>Why CNR Korea</h3>
+<ul>
+<li><strong>Established Expertise:</strong> Founded in 1999 with over two decades of continuous environmental technology development</li>
+<li><strong>Field-Proven Approach:</strong> Technologies validated through real-world deployment, not laboratory concepts alone</li>
+<li><strong>Low-Energy Focus:</strong> Systems optimized for minimal power consumption and high operational efficiency</li>
+<li><strong>Scalable Design:</strong> Modular solutions adaptable from pilot scale to large-scale deployment</li>
+</ul>
+</section>
 
   <section id="technologies">
     <h2>Core Technologies</h2>

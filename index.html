@@ -6,89 +6,103 @@
   <title>CNR Korea Co., Ltd. | Environmental & Energy Technologies</title>
 
   <style>
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-      margin:0; padding:0;
-      line-height:1.6;
-      color:#1a1a1a;
-      background:#eaf4f8;
-    }
+     body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0; padding:0;
+    line-height:1.6;
+    color:#1a1a1a;
+    background:#eaf4f8;
+  }
 
-    header{
-      background:#0f2a44;
-      color:#fff;
-      padding:40px 20px;
-      text-align:center;
-    }
+  header{
+    background:#0f2a44;
+    color:#fff;
+    padding:40px 20px;
+    text-align:center;
+  }
 
-    .header-bar{
-      max-width:1100px;
-      margin:0 auto;
-      display:grid;
-      grid-template-columns: 260px 1fr 260px;
-      align-items:center;
-      gap:12px;
-    }
+  .header-bar{
+    max-width:1100px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+  }
 
-    .logo-img{
-      max-width:100px;
-      height:auto;
-      display:block;
-      margin:0 auto; 
-    }
+  .logo-img{
+    max-width:100px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+  }
 
-    .brand-text{ text-align:center; }
-    .brand-text h1{
-      margin:0;
-      font-size:40px;
-      line-height:1.2;
-      font-weight:700;
-    }
-    .brand-text p{
-      margin:10px 0 0 0;
-      font-size:16px;
-    }
-    section{
-      padding:26px 20px;
-      max-width:1100px;
-      margin:0 auto;
-    }
+  .brand-text{ text-align:center; }
+  .brand-text h1{
+    margin:0;
+    font-size:40px;
+    line-height:1.2;
+    font-weight:700;
+  }
+  .brand-text p{
+    margin:10px 0 0 0;
+    font-size:16px;
+  }
+  .header-nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+  }
+  .header-nav a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:800;
+    font-size:30px;
+  }
+  .header-nav a:hover{ text-decoration:underline; }
+  section{
+    max-width:1100px;
+    margin:22px auto;
+    padding:0 20px;
+  }
+  .section-box{
+    background:#ffffff;
+    border:4px solid #7f92a6;
+    border-radius:12px;
+    box-shadow:0 10px 24px rgba(0,0,0,0.16);
+    padding:28px;
+    margin:0;
+  }
 
-    h2{ color:#0f2a44; margin:0 0 18px 0; }
-    h3{ margin:26px 0 10px 0; color:#0f2a44; }
+  h2{ color:#0f2a44; margin:0 0 18px 0; }
+  h3{ margin:26px 0 10px 0; color:#0f2a44; }
+  .section-box p{ margin:10px 0; }
+  ul{ margin-top:15px; }
 
-    .section-box p{ margin:10px 0; }
-    ul{ margin-top:15px; }
+  .two-col{ display:flex; gap:40px; align-items:flex-start; }
+  .col{ flex:1; }
 
-    .two-col{ display:flex; gap:40px; align-items:flex-start; }
-    .col{ flex:1; }
+  #contact h2{ font-size:32px; }
+  #contact .contact-box p{ font-size:18px; margin:10px 0; }
+  #contact .contact-box a{ font-size:18px; color:#0f2a44; text-decoration:none; }
+  #contact .contact-box a:hover{ text-decoration:underline; }
 
-    #contact h2{ font-size:32px; }
-    #contact .contact-box p{ font-size:18px; margin:10px 0; }
-    #contact .contact-box a{ font-size:18px; color:#0f2a44; text-decoration:none; }
-    #contact .contact-box a:hover{ text-decoration:underline; }
-
-    footer{
-      background:#f4f4f4;
-      text-align:center;
-      padding:20px;
-      font-size:0.9em;
-      color:#555;}
-    @media (max-width:768px){
-      section{ padding:18px 14px; }
-      .section-box{ padding:22px 20px; margin:14px 0; }
-      .two-col{ flex-direction:column; gap:18px; }
-      .header-bar{ grid-template-columns: 1fr; }
-      .brand-text h1{ font-size:32px; }
-     .header-nav{
-  display:flex;
-  gap:40px;
-  justify-content:flex-end;
-  align-items:center;
-  flex-wrap:wrap;
- }
+  footer{
+    background:#f4f4f4;
+    text-align:center;
+    padding:20px;
+    font-size:0.9em;
+    color:#555;
+  }
+  @media (max-width:768px){
+    section{ padding:0 14px; }
+    .section-box{ padding:22px 20px; }
+    .two-col{ flex-direction:column; gap:18px; }
+    .brand-text h1{ font-size:32px; }
+    .header-nav a{ font-size:22px; }
+    .header-nav{ gap:24px; }
 }
-
 .header-nav a{
   color:#ffffff;
   text-decoration:none;

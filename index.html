@@ -4,217 +4,175 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CNR Korea Co., Ltd. | Environmental & Energy Technologies</title>
- 
+
   <style>
-    body {font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; line-height:1.6; color:#1a1a1a;
-    background:#eaf4f8;}
-    header { background: #0f2a44; color: #ffffff; padding: 40px 20px; text-align: center; }
-    section{padding: 26px 20px; max-width: 1100px; margin: 0 auto;}
-    h2{color:#0f2a44; margin:0 0 18px 0;}
-    h3{margin:26px 0 10px 0;color:#0f2a44;}
-    .section-box p{margin:10px 0;}
-    ul { margin-top: 15px; }
-    footer { background: #f4f4f4; text-align: center; padding: 20px; font-size: 0.9em; color: #555; }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin:0; padding:0;
+      line-height:1.6;
+      color:#1a1a1a;
+      background:#eaf4f8;
+    }
 
-    .two-col { display: flex; gap: 40px; align-items: flex-start; }
-    .col { flex: 1; }
-
-   @media (max-width:768px){
-  section{ padding:18px 14px; }
-  .section-box{ padding:22px 20px; margin:14px auto; }
-  #contact h2{font-size:32px;}
-  #contact .contact-box p{font-size:18px; margin:10px 0;}
-  #contact .contact-box a{font-size:18px;}
-    .header-inner{
-      max-width:1100px;
-      margin:0 auto;
+    header{
+      background:#0f2a44;
+      color:#fff;
+      padding:40px 20px;
       text-align:center;
     }
 
-    .header-inner img{
-      display:block;
-      margin:0;
-      max-width:260px;
-      height:auto;
-    }
-    .logo-img{
-  max-width:100px;
-  height:auto;
-  display:block;
-}
     .header-bar{
-  max-width:1100px;
-  margin:0 auto;
-  display:grid;
-  grid-template-columns: 260px 1fr 260px; /* 좌(로고) / 중(텍스트) / 우(빈칸)*/
-  align-items:center;
-  gap:12px;
-}
+      max-width:1100px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns: 260px 1fr 260px;
+      align-items:center;
+      gap:12px;
+    }
 
-.brand-text{
-  text-align:center;
-}
-.brand-text h1{
-  margin:0;
-  font-size:40px;   
-  line-height:1.2;
-  font-weight:700;
-}
+    .logo-img{
+      max-width:100px;
+      height:auto;
+      display:block;
+      margin:0 auto; /* 가운데 유지 */
+    }
 
-.brand-text p{
-  margin:10px 0 0 0;
-  font-size:16px;  
-}
-  <h2>Contact</h2>
-  <div class="contact-box">
-    <p><strong>Website:</strong> <a href="https://seohaepetro.github.io/cnrkorea-site/" target="_blank">https://seohaepetro.github.io/cnrkorea-site/</a></p>
-    <p><strong>Email:</strong> <a href="mailto:sonsg0549@gmail.com">sonsg0549@gmail.com</a></p>
-    <p><strong>Location:</strong> Republic of Korea</p>
-  </div>
-#contact h2{
-  font-size:32px; 
-}
-#contact .contact-box p{
-  font-size:18px; 
-  margin:10px 0;
-}
-#contact .contact-box a{
-  font-size:18px;  
-}
- .section-box{
-  background: #ffffff;
-  border: 3px solid #9aa7b3;   /* 박스 윤곽을 확실하게 */
-  border-radius: 12px;
-  padding: 28px;
-  margin: 24px 0;
+    .brand-text{ text-align:center; }
+    .brand-text h1{
+      margin:0;
+      font-size:40px;
+      line-height:1.2;
+      font-weight:700;
+    }
+    .brand-text p{
+      margin:10px 0 0 0;
+      font-size:16px;
+    }
 
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12); /* 카드 느낌만 강조 */
-}
+    section{
+      padding:26px 20px;
+      max-width:1100px;
+      margin:0 auto;
+    }
+
+    h2{ color:#0f2a44; margin:0 0 18px 0; }
+    h3{ margin:26px 0 10px 0; color:#0f2a44; }
+
+    /* ✅ 박스 윤곽 확실하게 */
+    .section-box{
+      background:#ffffff;
+      border:4px solid #7f92a6;
+      border-radius:12px;
+      padding:28px;
+      margin:24px 0;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+    }
+
+    .section-box p{ margin:10px 0; }
+    ul{ margin-top:15px; }
+
+    .two-col{ display:flex; gap:40px; align-items:flex-start; }
+    .col{ flex:1; }
+
+    #contact h2{ font-size:32px; }
+    #contact .contact-box p{ font-size:18px; margin:10px 0; }
+    #contact .contact-box a{ font-size:18px; color:#0f2a44; text-decoration:none; }
+    #contact .contact-box a:hover{ text-decoration:underline; }
+
+    footer{
+      background:#f4f4f4;
+      text-align:center;
+      padding:20px;
+      font-size:0.9em;
+      color:#555;
+    }
+
+    /* ✅ @media 닫힘 포함 (중요) */
+    @media (max-width:768px){
+      section{ padding:18px 14px; }
+      .section-box{ padding:22px 20px; margin:14px 0; }
+      .two-col{ flex-direction:column; gap:18px; }
+      .header-bar{ grid-template-columns: 1fr; }
+      .brand-text h1{ font-size:32px; }
+    }
   </style>
+
   <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-  {
-  font-family: Arial, Helvetica, sans-serif;
-  margin:0;
-  padding:0;
-  line-height:1.6;
-  color:#1a1a1a;
-  background:#eaf4f8;  /* ✅ 연한 바다물 색 */
-}
-
   <header>
     <div class="header-bar">
-    <div>
-      <img src="logo.png" class="logo-img" alt="CNR Korea Logo">
-    </div>
+      <div><img src="logo.png" class="logo-img" alt="CNR Korea Logo"></div>
 
-    <div class="brand-text">
-      <h1>CNR Korea Co., Ltd.</h1>
-      <p>Practical Technologies for Water, Energy, and the Environment</p>
-    </div>
+      <div class="brand-text">
+        <h1>CNR Korea Co., Ltd.</h1>
+        <p>Practical Technologies for Water, Energy, and the Environment</p>
+      </div>
 
-    <div></div>
-  </div>
+      <div></div>
+    </div>
   </header>
 
   <section id="about">
     <div class="section-box">
-    <h2>About CNR Korea</h2>
+      <h2>About CNR Korea</h2>
+      <p><strong>CNR Korea Co., Ltd.</strong>, founded on <strong>November 11, 1999</strong>, has been continuously engaged in the development of environmental technologies for over two decades.</p>
+      <p>We develop and deliver practical, scalable solutions for water treatment, renewable energy generation, and environmental restoration.</p>
 
-    <p><strong>CNR Korea Co., Ltd.</strong>, founded on <strong>November 11, 1999</strong>, has been continuously engaged in the development of environmental technologies for over two decades.</p>
+      <h3>Vision</h3>
+      <p>To deliver practical environmental and energy technologies that enable carbon neutrality, water security, and resilient infrastructure worldwide.</p>
 
-    <p>We develop and deliver practical, scalable solutions for water treatment, renewable energy generation, and environmental restoration. Our work is driven by real-world challenges and validated through field deployment rather than laboratory-only concepts.</p>
-
-    <p>Our technologies are designed with a strong focus on low-energy operation, high efficiency, operational safety, durability, and ease of maintenance, enabling reliable performance across diverse environments, including remote and infrastructure-limited regions.</p>
-
-    <h3>Vision</h3>
-    <p>To deliver practical environmental and energy technologies that enable carbon neutrality, water security, and resilient infrastructure worldwide.</p>
-
-    <h3>Mission</h3>
-    <p>We design and deploy low-energy, high-efficiency systems that solve real-world environmental and energy challenges through scalable, field-proven solutions.</p>
-
-    <h3>Why CNR Korea</h3>
-    <ul>
-      <li><strong>Established Expertise:</strong> Founded in 1999 with over two decades of continuous environmental technology development</li>
-      <li><strong>Field-Proven Approach:</strong> Technologies validated through real-world deployment, not laboratory concepts alone</li>
-      <li><strong>Low-Energy Focus:</strong> Systems optimized for minimal power consumption and high operational efficiency</li>
-      <li><strong>Scalable Design:</strong> Modular solutions adaptable from pilot scale to large-scale deployment</li>
-    </ul>
+      <h3>Mission</h3>
+      <p>We design and deploy low-energy, high-efficiency systems that solve real-world environmental and energy challenges through scalable, field-proven solutions.</p>
+    </div>
   </section>
 
   <section id="core">
     <div class="section-box">
-    <h2>Core Technologies</h2>
-    <div class="two-col">
-      <div class="col">
-        <ul>
-          <li>Eco-Friendly Marine Intake Systems</li>
-          <li>Waste Oil Refining & Industrial Wastewater Treatment</li>
-          <li>Marine Pollution Cleanup & Soil Remediation</li>
-          <li>Non-Entry / Unmanned Storage Tank Cleaning</li>
-          <li>Incinerator-Based Seawater Desalination</li>
-          <li>Gravity-Driven Multi-Layer Desalination</li>
-          <li>Multi-Stage Compressed Dual-Flow Wind Turbines</li>
-          <li>Hydropower & Tidal Power Generation</li>
-          <li>Thermal & Waste-to-Energy Power Systems</li>
-        </ul>
-      </div>
-
-      <div class="col">
-        <ul>
-          <li>해양 생태계를 보호하는 친환경 취수 시스템</li>
-          <li>폐유 정제 및 산업 폐수 처리 기술</li>
-          <li>해양 오염 정화 및 토양 복원 기술</li>
-          <li>무인·비진입 저장탱크 세정 시스템</li>
-          <li>소각 기반 해수 담수화 기술</li>
-          <li>자연압 기반 다층 담수화 기술</li>
-          <li>다단 공기압축 이중기류 풍력 발전 기술</li>
-          <li>수력·조력 발전 기술</li>
-          <li>소형 열·폐기물 에너지 발전 시스템</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="strengths">
-    <div class="section-box">
-    <h2>Key Strengths</h2>
-    <div class="two-col">
-      <div class="col">
-        <ul>
-          <li>Low-energy, high-efficiency system architecture</li>
-          <li>Non-entry, unmanned, safety-oriented designs</li>
-          <li>Integrated water, energy, and environmental solutions</li>
-          <li>Field-validated, scalable modular deployment</li>
-        </ul>
-      </div>
-
-      <div class="col">
-        <ul>
-          <li>저에너지·고효율 시스템 구조</li>
-          <li>비진입·무인·안전 중심 설계</li>
-          <li>물·에너지·환경 통합 솔루션</li>
-          <li>현장 검증 완료 및 확장 가능한 모듈형 구조</li>
-        </ul>
+      <h2>Core Technologies</h2>
+      <div class="two-col">
+        <div class="col">
+          <ul>
+            <li>Eco-Friendly Marine Intake Systems</li>
+            <li>Waste Oil Refining & Industrial Wastewater Treatment</li>
+            <li>Marine Pollution Cleanup & Soil Remediation</li>
+            <li>Non-Entry / Unmanned Storage Tank Cleaning</li>
+            <li>Incinerator-Based Seawater Desalination</li>
+            <li>Gravity-Driven Multi-Layer Desalination</li>
+            <li>Multi-Stage Compressed Dual-Flow Wind Turbines</li>
+            <li>Hydropower & Tidal Power Generation</li>
+            <li>Thermal & Waste-to-Energy Power Systems</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li>해양 생태계를 보호하는 친환경 취수 시스템</li>
+            <li>폐유 정제 및 산업 폐수 처리 기술</li>
+            <li>해양 오염 정화 및 토양 복원 기술</li>
+            <li>무인·비진입 저장탱크 세정 시스템</li>
+            <li>소각 기반 해수 담수화 기술</li>
+            <li>자연압 기반 다층 담수화 기술</li>
+            <li>다단 공기압축 이중기류 풍력 발전 기술</li>
+            <li>수력·조력 발전 기술</li>
+            <li>소형 열·폐기물 에너지 발전 시스템</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="contact" style="text-align:center;">
     <div class="section-box">
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p><strong>Website:</strong> <a href="https://seohaepetro.github.io/cnrkorea-site/" target="_blank">https://seohaepetro.github.io/cnrkorea-site/</a></p>
-      <p><strong>Email:</strong> <a href="mailto:sonsg0549@gmail.com">sonsg0549@gmail.com</a></p>
-      <p><strong>Location:</strong> Republic of Korea</p>
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p><strong>Website:</strong> <a href="https://seohaepetro.github.io/cnrkorea-site/" target="_blank">https://seohaepetro.github.io/cnrkorea-site/</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sonsg0549@gmail.com">sonsg0549@gmail.com</a></p>
+        <p><strong>Location:</strong> Republic of Korea</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    © 2025 CNR Korea Co., Ltd. All rights reserved.
-  </footer>
-
+  <footer>© 2025 CNR Korea Co., Ltd. All rights reserved.</footer>
 </body>
 </html>
